@@ -1,5 +1,5 @@
 {
-  "name": "siddi-design-system",
+  "name": "@ksv/siddi-design-system",
   "version": "1.0.0",
   "description": "Design system tokens and core stylesheets for Siddi applications.",
   "type": "module",
