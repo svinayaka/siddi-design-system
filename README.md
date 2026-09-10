@@ -33,8 +33,24 @@ npm install @svinayaka/siddi-design-system
 ### 2. JavaScript / TypeScript Tokens
 
 ```typescript
-import { ColorPrimary500, Space4 } from '@svinayaka/siddi-design-system/tokens';
+import { ColorPrimary500, Space4, BgSurface, TextPrimary } from '@svinayaka/siddi-design-system/tokens';
 ```
+
+---
+
+## Color Token Scales
+
+The system provides literal color primitives and semantic intent scales across steps `50`–`950`:
+
+| Palette | Primitive Variable | Semantic Role | Role Variable |
+| :--- | :--- | :--- | :--- |
+| **Slate** | `--ksv-ds-color-slate-*` | Neutral | `--ksv-ds-color-neutral-*` |
+| **Indigo** | `--ksv-ds-color-indigo-*` | Primary (Brand) | `--ksv-ds-color-primary-*` |
+| **Cyan** | `--ksv-ds-color-cyan-*` | Accent | `--ksv-ds-color-accent-*` |
+| **Emerald** | `--ksv-ds-color-emerald-*` | Success | `--ksv-ds-color-success-*` |
+| **Amber** | `--ksv-ds-color-amber-*` | Warning | `--ksv-ds-color-warning-*` |
+| **Rose** | `--ksv-ds-color-rose-*` | Danger | `--ksv-ds-color-danger-*` |
+| **Sky** | `--ksv-ds-color-sky-*` | Info | `--ksv-ds-color-info-*` |
 
 ---
 

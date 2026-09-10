@@ -3,13 +3,20 @@
 
 ---
 
-## 1. Core Token Rules
+## 1. Core Token Rules & Architecture
 
+The Siddi Design System uses a **3-Tier Token Architecture**:
+1. **Tier 1 - Primitives (`tokens/color/primitive.json`)**: Raw literal color scales (50–950) for `slate`, `indigo`, `cyan`, `emerald`, `amber`, `rose`, `sky`, plus `white`, `black`, `transparent`.
+2. **Tier 2 - Role / Intent Scales (`tokens/color/base.json`)**: Semantic aliases mapping roles (`neutral`, `primary`, `accent`, `success`, `warning`, `danger`, `info`) to primitive scales.
+3. **Tier 3 - Theme Tokens (`tokens/color/light.json` & `tokens/color/dark.json`)**: Contextual design tokens (`bg-*`, `text-*`, `border-*`, `interactive-*`, `status-*`).
+
+### Rules:
 1. **Namespace Prefix**: Every token **must** begin with `--ksv-ds-` (e.g., `var(--ksv-ds-bg-surface)`). Never use raw CSS values or un-prefixed custom properties.
-2. **No Hardcoded Colors**: Never write hex codes (`#fff`), `rgb()`, or `hsl()` in component CSS. Always use semantic CSS variables (`var(--ksv-ds-bg-canvas)`, `var(--ksv-ds-text-primary)`, `var(--ksv-ds-interactive-primary)`).
-3. **Theme Parity**: When adding a semantic token in `tokens/color/light.json`, you **must** add the matching token in `tokens/color/dark.json`.
-4. **Spacing & Radii**: Use the predefined scales (`var(--ksv-ds-space-1)` to `var(--ksv-ds-space-32)` and `var(--ksv-ds-radius-sm)` to `var(--ksv-ds-radius-full)`). Avoid arbitrary pixel numbers.
-5. **Theme Override Attribute**: Use `data-ksv-ds-theme="dark"` / `data-ksv-ds-theme="light"` or `element.dataset.ksvDsTheme` in JavaScript.
+2. **No Hardcoded Colors in Components**: Never write hex codes (`#fff`), `rgb()`, or `hsl()` in component CSS. Always use Tier 3 semantic CSS variables (`var(--ksv-ds-bg-canvas)`, `var(--ksv-ds-text-primary)`, `var(--ksv-ds-interactive-primary)`).
+3. **Adding New Colors**: Add raw hex values to `tokens/color/primitive.json`, alias them in `tokens/color/base.json`, and reference them in `light.json`/`dark.json`.
+4. **Theme Parity**: When adding a semantic token in `tokens/color/light.json`, you **must** add the matching token in `tokens/color/dark.json`.
+5. **Spacing & Radii**: Use the predefined scales (`var(--ksv-ds-space-1)` to `var(--ksv-ds-space-32)` and `var(--ksv-ds-radius-sm)` to `var(--ksv-ds-radius-full)`). Avoid arbitrary pixel numbers.
+6. **Theme Override Attribute**: Use `data-ksv-ds-theme="dark"` / `data-ksv-ds-theme="light"` or `element.dataset.ksvDsTheme` in JavaScript.
 
 ---
 

@@ -16,7 +16,7 @@ if (!fs.existsSync('./src')) {
 
 // 1. Build Base Colors
 const sdColors = new StyleDictionary({
-  source: ['tokens/color/base.json'],
+  source: ['tokens/color/primitive.json', 'tokens/color/base.json'],
   platforms: {
     css: {
       prefix: PREFIX,
@@ -151,7 +151,7 @@ ${lines}
 
 // 5. Build Light Theme
 const sdLight = new StyleDictionary({
-  source: ['tokens/color/base.json', 'tokens/color/light.json'],
+  source: ['tokens/color/primitive.json', 'tokens/color/base.json', 'tokens/color/light.json'],
   platforms: {
     css: {
       prefix: PREFIX,
@@ -175,7 +175,7 @@ const sdLight = new StyleDictionary({
 
 // 6. Build Dark Theme
 const sdDark = new StyleDictionary({
-  source: ['tokens/color/base.json', 'tokens/color/dark.json'],
+  source: ['tokens/color/primitive.json', 'tokens/color/base.json', 'tokens/color/dark.json'],
   platforms: {
     css: {
       prefix: PREFIX,
