@@ -1,7 +1,14 @@
 {
-  "name": "@ksv/siddi-design-system",
+  "name": "@svinayaka/siddi-design-system",
   "version": "1.0.0",
   "description": "Design system tokens and core stylesheets for Siddi applications.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svinayaka/siddi-design-system.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "main": "./src/index.css",
   "style": "./src/index.css",
@@ -16,6 +23,11 @@
     "./breakpoints": "./src/breakpoints.css",
     "./light": "./src/light.css",
     "./dark": "./src/dark.css",
+    "./tokens": {
+      "types": "./src/tokens.d.ts",
+      "import": "./src/tokens.js",
+      "default": "./src/tokens.js"
+    },
     "./*": "./src/*"
   },
   "files": [
