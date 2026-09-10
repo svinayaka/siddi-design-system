@@ -6,7 +6,7 @@
 ## 1. Core Token Rules & Architecture
 
 The Siddi Design System uses a **3-Tier Token Architecture**:
-1. **Tier 1 - Primitives (`tokens/color/primitive.json`)**: Raw literal color scales (50–950) for `slate`, `indigo`, `cyan`, `emerald`, `amber`, `rose`, `sky`, plus `white`, `black`, `transparent`.
+1. **Tier 1 - Primitives (`tokens/color/primitive.json`)**: Raw literal color scales (50–950) for `slate`, `indigo`, `violet`, `cyan`, `emerald`, `amber`, `rose`, `sky`, plus `white`, `black`, `transparent`.
 2. **Tier 2 - Role / Intent Scales (`tokens/color/base.json`)**: Semantic aliases mapping roles (`neutral`, `primary`, `accent`, `success`, `warning`, `danger`, `info`) to primitive scales.
 3. **Tier 3 - Theme Tokens (`tokens/color/light.json` & `tokens/color/dark.json`)**: Contextual design tokens (`bg-*`, `text-*`, `border-*`, `interactive-*`, `status-*`).
 

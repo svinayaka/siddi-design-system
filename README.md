@@ -60,6 +60,7 @@ The Siddi Design System provides two layers of tokens depending on your use case
 | :--- | :--- | :--- | :--- |
 | **Slate** | `--ksv-ds-color-slate-*` | Neutral | `--ksv-ds-color-neutral-*` |
 | **Indigo** | `--ksv-ds-color-indigo-*` | Primary (Brand) | `--ksv-ds-color-primary-*` |
+| **Violet** | `--ksv-ds-color-violet-*` | (Decorative / Accent) | — |
 | **Cyan** | `--ksv-ds-color-cyan-*` | Accent | `--ksv-ds-color-accent-*` |
 | **Emerald** | `--ksv-ds-color-emerald-*` | Success | `--ksv-ds-color-success-*` |
 | **Amber** | `--ksv-ds-color-amber-*` | Warning | `--ksv-ds-color-warning-*` |
