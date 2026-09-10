@@ -33,14 +33,28 @@ npm install @svinayaka/siddi-design-system
 ### 2. JavaScript / TypeScript Tokens
 
 ```typescript
-import { ColorPrimary500, Space4, BgSurface, TextPrimary } from '@svinayaka/siddi-design-system/tokens';
+// Import semantic theme tokens (adapt to light/dark mode)
+import { BgSurface, TextPrimary, InteractivePrimary } from '@svinayaka/siddi-design-system/tokens';
+
+// Import primitive color tokens (for charts, data-viz, custom tags)
+import { ColorIndigo500, ColorRose500, ColorEmerald500, Space4 } from '@svinayaka/siddi-design-system/tokens';
 ```
 
 ---
 
-## Color Token Scales
+## Token Architecture & Usage Guidance
 
-The system provides literal color primitives and semantic intent scales across steps `50`–`950`:
+The Siddi Design System provides two layers of tokens depending on your use case:
+
+1. **Semantic Tokens** (`--ksv-ds-bg-*`, `--ksv-ds-text-*`, `--ksv-ds-interactive-*`):
+   - **Best for**: Standard application UI, surfaces, cards, buttons, text, inputs, borders.
+   - **Benefit**: Automatically adapt across Light and Dark themes.
+
+2. **Primitive Palette Tokens** (`--ksv-ds-color-slate-*`, `--ksv-ds-color-rose-*`, etc.):
+   - **Best for**: Charts, data visualizations, multi-color category badges/tags, user avatars, illustrations, and non-themed decorative elements.
+   - **Benefit**: Retain their exact specified color shade regardless of active theme.
+
+### Color Scales (Steps 50–950)
 
 | Palette | Primitive Variable | Semantic Role | Role Variable |
 | :--- | :--- | :--- | :--- |

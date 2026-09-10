@@ -11,12 +11,14 @@ The Siddi Design System uses a **3-Tier Token Architecture**:
 3. **Tier 3 - Theme Tokens (`tokens/color/light.json` & `tokens/color/dark.json`)**: Contextual design tokens (`bg-*`, `text-*`, `border-*`, `interactive-*`, `status-*`).
 
 ### Rules:
-1. **Namespace Prefix**: Every token **must** begin with `--ksv-ds-` (e.g., `var(--ksv-ds-bg-surface)`). Never use raw CSS values or un-prefixed custom properties.
-2. **No Hardcoded Colors in Components**: Never write hex codes (`#fff`), `rgb()`, or `hsl()` in component CSS. Always use Tier 3 semantic CSS variables (`var(--ksv-ds-bg-canvas)`, `var(--ksv-ds-text-primary)`, `var(--ksv-ds-interactive-primary)`).
-3. **Adding New Colors**: Add raw hex values to `tokens/color/primitive.json`, alias them in `tokens/color/base.json`, and reference them in `light.json`/`dark.json`.
-4. **Theme Parity**: When adding a semantic token in `tokens/color/light.json`, you **must** add the matching token in `tokens/color/dark.json`.
-5. **Spacing & Radii**: Use the predefined scales (`var(--ksv-ds-space-1)` to `var(--ksv-ds-space-32)` and `var(--ksv-ds-radius-sm)` to `var(--ksv-ds-radius-full)`). Avoid arbitrary pixel numbers.
-6. **Theme Override Attribute**: Use `data-ksv-ds-theme="dark"` / `data-ksv-ds-theme="light"` or `element.dataset.ksvDsTheme` in JavaScript.
+1. **Namespace Prefix**: Every token **must** begin with `--ksv-ds-` (e.g., `var(--ksv-ds-bg-surface)`, `var(--ksv-ds-color-indigo-500)`). Never use raw CSS values or un-prefixed custom properties.
+2. **No Hardcoded Hex / RGB**: Never write raw hex codes (`#fff`), `rgb()`, or `hsl()` in component styles.
+3. **Semantic Tokens for Core UI**: Use Tier 3 semantic CSS variables (`var(--ksv-ds-bg-canvas)`, `var(--ksv-ds-text-primary)`, `var(--ksv-ds-interactive-primary)`) for standard application UI (buttons, cards, forms, typography, surfaces) so they automatically adapt to light and dark themes.
+4. **Primitive Tokens for Data-Viz & Decorative Elements**: Primitive tokens (`var(--ksv-ds-color-rose-500)`, `var(--ksv-ds-color-cyan-400)`, etc.) are fully supported for charts, multi-colored category badges/tags, avatars, illustrations, and fixed non-themed elements.
+5. **Adding New Colors**: Add raw hex values to `tokens/color/primitive.json`, alias them in `tokens/color/base.json`, and reference them in `light.json`/`dark.json`.
+6. **Theme Parity**: When adding a semantic token in `tokens/color/light.json`, you **must** add the matching token in `tokens/color/dark.json`.
+7. **Spacing & Radii**: Use the predefined scales (`var(--ksv-ds-space-1)` to `var(--ksv-ds-space-32)` and `var(--ksv-ds-radius-sm)` to `var(--ksv-ds-radius-full)`). Avoid arbitrary pixel numbers.
+8. **Theme Override Attribute**: Use `data-ksv-ds-theme="dark"` / `data-ksv-ds-theme="light"` or `element.dataset.ksvDsTheme` in JavaScript.
 
 ---
 
