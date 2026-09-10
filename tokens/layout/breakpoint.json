@@ -1,0 +1,24 @@
+{
+  "breakpoint": {
+    "xs": { "$value": "480px", "$type": "dimension" },
+    "sm": { "$value": "640px", "$type": "dimension" },
+    "md": { "$value": "768px", "$type": "dimension" },
+    "lg": { "$value": "1024px", "$type": "dimension" },
+    "xl": { "$value": "1280px", "$type": "dimension" },
+    "2xl": { "$value": "1536px", "$type": "dimension" }
+  },
+  "container": {
+    "xs": { "$value": "480px", "$type": "dimension" },
+    "sm": { "$value": "640px", "$type": "dimension" },
+    "md": { "$value": "768px", "$type": "dimension" },
+    "lg": { "$value": "1024px", "$type": "dimension" },
+    "xl": { "$value": "1280px", "$type": "dimension" },
+    "2xl": { "$value": "1440px", "$type": "dimension" },
+    "full": { "$value": "100%" }
+  },
+  "gutter": {
+    "mobile": { "$value": "{space.4}", "$type": "dimension" },
+    "tablet": { "$value": "{space.6}", "$type": "dimension" },
+    "desktop": { "$value": "{space.8}", "$type": "dimension" }
+  }
+}

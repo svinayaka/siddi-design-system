@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddi Design System - Token Test (ksv-ds)</title>
+  <link rel="stylesheet" href="./src/index.css" />
+  <style>
+    .container {
+      max-width: var(--ksv-ds-container-lg, 1024px);
+      margin: 0 auto;
+      padding: var(--ksv-ds-space-8, 32px) var(--ksv-ds-space-4, 16px);
+    }
+    .header {
+      margin-bottom: var(--ksv-ds-space-8, 32px);
+      padding-bottom: var(--ksv-ds-space-4, 16px);
+      border-bottom: 1px solid var(--ksv-ds-border-subtle);
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: var(--ksv-ds-text-xs, 12px);
+      font-weight: var(--ksv-ds-font-weight-semibold, 600);
+      border-radius: var(--ksv-ds-radius-full, 9999px);
+      background-color: var(--ksv-ds-interactive-primary);
+      color: var(--ksv-ds-interactive-primary-text);
+      margin-bottom: var(--ksv-ds-space-2, 8px);
+    }
+    .theme-controls {
+      display: flex;
+      gap: var(--ksv-ds-space-3, 12px);
+      margin: var(--ksv-ds-space-4, 16px) 0;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: var(--ksv-ds-space-2, 8px) var(--ksv-ds-space-4, 16px);
+      font-family: inherit;
+      font-size: var(--ksv-ds-text-sm, 14px);
+      font-weight: var(--ksv-ds-font-weight-medium, 500);
+      border-radius: var(--ksv-ds-radius-lg, 8px);
+      border: 1px solid var(--ksv-ds-border-default);
+      background: var(--ksv-ds-bg-surface);
+      color: var(--ksv-ds-text-primary);
+      cursor: pointer;
+      transition: all var(--ksv-ds-duration-fast, 150ms) ease;
+    }
+    .btn:hover {
+      background: var(--ksv-ds-bg-subtle);
+      border-color: var(--ksv-ds-border-strong);
+    }
+    .btn-primary {
+      background: var(--ksv-ds-interactive-primary);
+      color: var(--ksv-ds-interactive-primary-text);
+      border-color: transparent;
+    }
+    .btn-primary:hover {
+      background: var(--ksv-ds-interactive-primary-hover);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: var(--ksv-ds-space-4, 16px);
+      margin-top: var(--ksv-ds-space-6, 24px);
+    }
+    .card {
+      background: var(--ksv-ds-bg-surface);
+      border: 1px solid var(--ksv-ds-border-subtle);
+      border-radius: var(--ksv-ds-radius-xl, 12px);
+      padding: var(--ksv-ds-space-5, 20px);
+      box-shadow: var(--ksv-ds-shadow-sm);
+      transition: transform var(--ksv-ds-duration-fast, 150ms) ease, box-shadow var(--ksv-ds-duration-fast, 150ms) ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--ksv-ds-shadow-md);
+      border-color: var(--ksv-ds-border-default);
+    }
+    .swatch {
+      height: 60px;
+      border-radius: var(--ksv-ds-radius-md, 6px);
+      margin-bottom: var(--ksv-ds-space-3, 12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--ksv-ds-text-xs, 12px);
+      font-weight: var(--ksv-ds-font-weight-medium, 500);
+      border: 1px solid var(--ksv-ds-border-subtle);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="badge">Prefix: --ksv-ds- | Theme Attr: data-ksv-ds-theme</div>
+      <h1>Token Verification & Theme Tester</h1>
+      <p style="color: var(--ksv-ds-text-secondary); margin: 0;">
+        Toggle themes below to verify token synchronization in real time.
+      </p>
+
+      <div class="theme-controls">
+        <button class="btn btn-primary" onclick="setTheme('light')">☀️ Light Mode</button>
+        <button class="btn" onclick="setTheme('dark')">🌙 Dark Mode</button>
+        <button class="btn" onclick="setTheme('auto')">⚡ System Auto</button>
+      </div>
+      <p style="font-size: var(--ksv-ds-text-xs, 12px); color: var(--ksv-ds-text-muted);">
+        Active Attribute: <code id="active-theme-label">&lt;html data-ksv-ds-theme="light"&gt;</code>
+      </p>
+    </div>
+
+    <h2>Semantic Tokens Preview</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="swatch" style="background: var(--ksv-ds-bg-canvas); color: var(--ksv-ds-text-primary);">Canvas</div>
+        <strong>bg-canvas</strong>
+        <p style="color: var(--ksv-ds-text-secondary); font-size: var(--ksv-ds-text-xs, 12px); margin: 4px 0 0 0;">Page background</p>
+      </div>
+
+      <div class="card">
+        <div class="swatch" style="background: var(--ksv-ds-bg-surface-elevated); color: var(--ksv-ds-text-primary);">Elevated</div>
+        <strong>bg-surface-elevated</strong>
+        <p style="color: var(--ksv-ds-text-secondary); font-size: var(--ksv-ds-text-xs, 12px); margin: 4px 0 0 0;">Card & modal surface</p>
+      </div>
+
+      <div class="card">
+        <div class="swatch" style="background: var(--ksv-ds-interactive-primary); color: var(--ksv-ds-interactive-primary-text);">Primary</div>
+        <strong>interactive-primary</strong>
+        <p style="color: var(--ksv-ds-text-secondary); font-size: var(--ksv-ds-text-xs, 12px); margin: 4px 0 0 0;">Call-to-action color</p>
+      </div>
+
+      <div class="card">
+        <div class="swatch" style="background: var(--ksv-ds-status-success-bg); color: var(--ksv-ds-status-success-text); border-color: var(--ksv-ds-status-success-border);">Success</div>
+        <strong>status-success</strong>
+        <p style="color: var(--ksv-ds-text-secondary); font-size: var(--ksv-ds-text-xs, 12px); margin: 4px 0 0 0;">Success banner / alert</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function updateLabel() {
+      const current = document.documentElement.dataset.ksvDsTheme;
+      const label = document.getElementById('active-theme-label');
+      if (current) {
+        label.textContent = '<html data-ksv-ds-theme="' + current + '">';
+      } else {
+        label.textContent = '<html (no attribute - prefers-color-scheme active)>';
+      }
+    }
+
+    function setTheme(theme) {
+      if (theme === 'auto') {
+        delete document.documentElement.dataset.ksvDsTheme;
+      } else {
+        document.documentElement.dataset.ksvDsTheme = theme;
+      }
+      updateLabel();
+    }
+
+    updateLabel();
+  </script>
+</body>
+</html>

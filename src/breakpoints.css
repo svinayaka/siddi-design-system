@@ -1,0 +1,22 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ksv-ds-breakpoint-xs: 480px;
+  --ksv-ds-breakpoint-sm: 640px;
+  --ksv-ds-breakpoint-md: 768px;
+  --ksv-ds-breakpoint-lg: 1024px;
+  --ksv-ds-breakpoint-xl: 1280px;
+  --ksv-ds-breakpoint-2xl: 1536px;
+  --ksv-ds-container-xs: 480px;
+  --ksv-ds-container-sm: 640px;
+  --ksv-ds-container-md: 768px;
+  --ksv-ds-container-lg: 1024px;
+  --ksv-ds-container-xl: 1280px;
+  --ksv-ds-container-2xl: 1440px;
+  --ksv-ds-container-full: 100%;
+  --ksv-ds-gutter-mobile: var(--ksv-ds-space-4);
+  --ksv-ds-gutter-tablet: var(--ksv-ds-space-6);
+  --ksv-ds-gutter-desktop: var(--ksv-ds-space-8);
+}

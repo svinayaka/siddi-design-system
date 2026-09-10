@@ -1,0 +1,63 @@
+/**
+ * Siddi Design System - Main Entrypoint
+ * Generated via Style Dictionary token pipeline.
+ */
+
+@import "./colors.css";
+@import "./spacing.css";
+@import "./typography.css";
+@import "./breakpoints.css";
+@import "./light.css";
+@import "./dark.css";
+
+/* Base Resets & Global Defaults */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ksv-ds-font-sans);
+  font-size: 16px;
+  line-height: var(--ksv-ds-leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--ksv-ds-bg-canvas);
+  color: var(--ksv-ds-text-primary);
+  font-family: inherit;
+  transition: background-color var(--ksv-ds-duration-normal) var(--ksv-ds-ease-default),
+              color var(--ksv-ds-duration-normal) var(--ksv-ds-ease-default);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ksv-ds-font-display);
+  color: var(--ksv-ds-text-primary);
+  margin-top: 0;
+  font-weight: var(--ksv-ds-font-weight-bold);
+  line-height: var(--ksv-ds-leading-tight);
+}
+
+/* Links */
+a {
+  color: var(--ksv-ds-text-link);
+  text-decoration: none;
+  transition: color var(--ksv-ds-duration-fast) var(--ksv-ds-ease-default);
+}
+
+a:hover {
+  color: var(--ksv-ds-text-link-hover);
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--ksv-ds-focus-ring);
+}

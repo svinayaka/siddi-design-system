@@ -1,0 +1,32 @@
+{
+  "text": {
+    "2xs": { "$value": "0.6875rem", "$type": "dimension" },
+    "xs": { "$value": "0.75rem", "$type": "dimension" },
+    "sm": { "$value": "0.875rem", "$type": "dimension" },
+    "base": { "$value": "1rem", "$type": "dimension" },
+    "lg": { "$value": "1.125rem", "$type": "dimension" },
+    "xl": { "$value": "1.25rem", "$type": "dimension" },
+    "2xl": { "$value": "1.5rem", "$type": "dimension" },
+    "3xl": { "$value": "1.875rem", "$type": "dimension" },
+    "4xl": { "$value": "2.25rem", "$type": "dimension" },
+    "5xl": { "$value": "3rem", "$type": "dimension" },
+    "6xl": { "$value": "3.75rem", "$type": "dimension" },
+    "7xl": { "$value": "4.5rem", "$type": "dimension" }
+  },
+  "leading": {
+    "none": { "$value": "1" },
+    "tight": { "$value": "1.25" },
+    "snug": { "$value": "1.375" },
+    "normal": { "$value": "1.5" },
+    "relaxed": { "$value": "1.625" },
+    "loose": { "$value": "2" }
+  },
+  "tracking": {
+    "tighter": { "$value": "-0.05em" },
+    "tight": { "$value": "-0.025em" },
+    "normal": { "$value": "0em" },
+    "wide": { "$value": "0.025em" },
+    "wider": { "$value": "0.05em" },
+    "widest": { "$value": "0.1em" }
+  }
+}

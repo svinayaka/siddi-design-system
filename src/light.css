@@ -1,0 +1,73 @@
+/**
+ * Siddi Design System - Generated Theme (Light Theme)
+ * Generated automatically by Style Dictionary. Do not edit directly.
+ */
+
+:root,
+[data-ksv-ds-theme="light"],
+[data-theme="light"] {
+  color-scheme: light;
+
+  --ksv-ds-bg-canvas: #ffffff;
+  --ksv-ds-bg-surface: #ffffff;
+  --ksv-ds-bg-surface-elevated: #ffffff;
+  --ksv-ds-bg-surface-sunken: #f1f5f9;
+  --ksv-ds-bg-subtle: #f8fafc;
+  --ksv-ds-bg-muted: #f1f5f9;
+  --ksv-ds-bg-overlay: rgba(15, 23, 42, 0.5);
+  --ksv-ds-bg-glass: rgba(255, 255, 255, 0.75);
+  --ksv-ds-bg-glass-card: rgba(255, 255, 255, 0.6);
+  --ksv-ds-text-primary: #0f172a;
+  --ksv-ds-text-secondary: #475569;
+  --ksv-ds-text-tertiary: #64748b;
+  --ksv-ds-text-muted: #94a3b8;
+  --ksv-ds-text-inverse: #ffffff;
+  --ksv-ds-text-brand: #4f46e5;
+  --ksv-ds-text-link: #4f46e5;
+  --ksv-ds-text-link-hover: #4338ca;
+  --ksv-ds-border-subtle: #e2e8f0;
+  --ksv-ds-border-default: #cbd5e1;
+  --ksv-ds-border-strong: #94a3b8;
+  --ksv-ds-border-focus: #6366f1;
+  --ksv-ds-border-glass: rgba(255, 255, 255, 0.4);
+  --ksv-ds-interactive-primary: #4f46e5;
+  --ksv-ds-interactive-primary-hover: #4338ca;
+  --ksv-ds-interactive-primary-active: #3730a3;
+  --ksv-ds-interactive-primary-text: #ffffff;
+  --ksv-ds-interactive-secondary: #f1f5f9;
+  --ksv-ds-interactive-secondary-hover: #e2e8f0;
+  --ksv-ds-interactive-secondary-active: #cbd5e1;
+  --ksv-ds-interactive-secondary-text: #0f172a;
+  --ksv-ds-interactive-accent: #0891b2;
+  --ksv-ds-interactive-accent-hover: #0e7490;
+  --ksv-ds-interactive-accent-active: #155e75;
+  --ksv-ds-interactive-accent-text: #ffffff;
+  --ksv-ds-interactive-danger: #e11d48;
+  --ksv-ds-interactive-danger-hover: #be123c;
+  --ksv-ds-interactive-danger-active: #9f1239;
+  --ksv-ds-interactive-danger-text: #ffffff;
+  --ksv-ds-interactive-ghost-hover: #f1f5f9;
+  --ksv-ds-interactive-ghost-active: #e2e8f0;
+  --ksv-ds-interactive-disabled: #e2e8f0;
+  --ksv-ds-interactive-disabled-text: #94a3b8;
+  --ksv-ds-interactive-disabled-border: #e2e8f0;
+  --ksv-ds-status-success-bg: #ecfdf5;
+  --ksv-ds-status-success-border: #a7f3d0;
+  --ksv-ds-status-success-text: #065f46;
+  --ksv-ds-status-success-icon: #059669;
+  --ksv-ds-status-warning-bg: #fffbeb;
+  --ksv-ds-status-warning-border: #fde68a;
+  --ksv-ds-status-warning-text: #92400e;
+  --ksv-ds-status-warning-icon: #d97706;
+  --ksv-ds-status-danger-bg: #fff1f2;
+  --ksv-ds-status-danger-border: #fecdd3;
+  --ksv-ds-status-danger-text: #9f1239;
+  --ksv-ds-status-danger-icon: #e11d48;
+  --ksv-ds-status-info-bg: #f0f9ff;
+  --ksv-ds-status-info-border: #bae6fd;
+  --ksv-ds-status-info-text: #075985;
+  --ksv-ds-status-info-icon: #0284c7;
+  --ksv-ds-focus-ring: 0 0 0 3px rgba(99, 102, 241, 0.35);
+  --ksv-ds-focus-ring-danger: 0 0 0 3px rgba(244, 63, 94, 0.35);
+  --ksv-ds-backdrop-blur: blur(12px);
+}

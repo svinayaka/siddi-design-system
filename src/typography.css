@@ -1,0 +1,41 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ksv-ds-font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --ksv-ds-font-display: 'Outfit', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --ksv-ds-font-mono: 'JetBrains Mono', 'Fira Code', 'Roboto Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --ksv-ds-font-serif: 'Newsreader', 'Merriweather', 'Georgia', Cambria, 'Times New Roman', Times, serif;
+  --ksv-ds-font-weight-light: 300;
+  --ksv-ds-font-weight-regular: 400;
+  --ksv-ds-font-weight-medium: 500;
+  --ksv-ds-font-weight-semibold: 600;
+  --ksv-ds-font-weight-bold: 700;
+  --ksv-ds-font-weight-extrabold: 800;
+  --ksv-ds-font-weight-black: 900;
+  --ksv-ds-text-2xs: 0.6875rem;
+  --ksv-ds-text-xs: 0.75rem;
+  --ksv-ds-text-sm: 0.875rem;
+  --ksv-ds-text-base: 1rem;
+  --ksv-ds-text-lg: 1.125rem;
+  --ksv-ds-text-xl: 1.25rem;
+  --ksv-ds-text-2xl: 1.5rem;
+  --ksv-ds-text-3xl: 1.875rem;
+  --ksv-ds-text-4xl: 2.25rem;
+  --ksv-ds-text-5xl: 3rem;
+  --ksv-ds-text-6xl: 3.75rem;
+  --ksv-ds-text-7xl: 4.5rem;
+  --ksv-ds-leading-none: 1;
+  --ksv-ds-leading-tight: 1.25;
+  --ksv-ds-leading-snug: 1.375;
+  --ksv-ds-leading-normal: 1.5;
+  --ksv-ds-leading-relaxed: 1.625;
+  --ksv-ds-leading-loose: 2;
+  --ksv-ds-tracking-tighter: -0.05em;
+  --ksv-ds-tracking-tight: -0.025em;
+  --ksv-ds-tracking-normal: 0em;
+  --ksv-ds-tracking-wide: 0.025em;
+  --ksv-ds-tracking-wider: 0.05em;
+  --ksv-ds-tracking-widest: 0.1em;
+}

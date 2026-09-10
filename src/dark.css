@@ -1,0 +1,155 @@
+/**
+ * Siddi Design System - Generated Theme (Dark Theme)
+ * Generated automatically by Style Dictionary. Do not edit directly.
+ */
+
+[data-ksv-ds-theme="dark"],
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --ksv-ds-bg-canvas: #020617;
+  --ksv-ds-bg-surface: #0f172a;
+  --ksv-ds-bg-surface-elevated: #1e293b;
+  --ksv-ds-bg-surface-sunken: #000000;
+  --ksv-ds-bg-subtle: #0f172a;
+  --ksv-ds-bg-muted: #1e293b;
+  --ksv-ds-bg-overlay: rgba(0, 0, 0, 0.75);
+  --ksv-ds-bg-glass: rgba(15, 23, 42, 0.75);
+  --ksv-ds-bg-glass-card: rgba(30, 41, 59, 0.6);
+  --ksv-ds-text-primary: #f8fafc;
+  --ksv-ds-text-secondary: #94a3b8;
+  --ksv-ds-text-tertiary: #64748b;
+  --ksv-ds-text-muted: #475569;
+  --ksv-ds-text-inverse: #0f172a;
+  --ksv-ds-text-brand: #818cf8;
+  --ksv-ds-text-link: #818cf8;
+  --ksv-ds-text-link-hover: #a5b4fc;
+  --ksv-ds-border-subtle: rgba(255, 255, 255, 0.08);
+  --ksv-ds-border-default: rgba(255, 255, 255, 0.15);
+  --ksv-ds-border-strong: rgba(255, 255, 255, 0.25);
+  --ksv-ds-border-focus: #818cf8;
+  --ksv-ds-border-glass: rgba(255, 255, 255, 0.1);
+  --ksv-ds-interactive-primary: #6366f1;
+  --ksv-ds-interactive-primary-hover: #818cf8;
+  --ksv-ds-interactive-primary-active: #4f46e5;
+  --ksv-ds-interactive-primary-text: #ffffff;
+  --ksv-ds-interactive-secondary: #1e293b;
+  --ksv-ds-interactive-secondary-hover: #334155;
+  --ksv-ds-interactive-secondary-active: #475569;
+  --ksv-ds-interactive-secondary-text: #f8fafc;
+  --ksv-ds-interactive-accent: #06b6d4;
+  --ksv-ds-interactive-accent-hover: #22d3ee;
+  --ksv-ds-interactive-accent-active: #0891b2;
+  --ksv-ds-interactive-accent-text: #ffffff;
+  --ksv-ds-interactive-danger: #f43f5e;
+  --ksv-ds-interactive-danger-hover: #fb7185;
+  --ksv-ds-interactive-danger-active: #e11d48;
+  --ksv-ds-interactive-danger-text: #ffffff;
+  --ksv-ds-interactive-ghost-hover: rgba(255, 255, 255, 0.06);
+  --ksv-ds-interactive-ghost-active: rgba(255, 255, 255, 0.1);
+  --ksv-ds-interactive-disabled: rgba(255, 255, 255, 0.06);
+  --ksv-ds-interactive-disabled-text: rgba(255, 255, 255, 0.25);
+  --ksv-ds-interactive-disabled-border: rgba(255, 255, 255, 0.04);
+  --ksv-ds-status-success-bg: rgba(16, 185, 129, 0.12);
+  --ksv-ds-status-success-border: rgba(16, 185, 129, 0.25);
+  --ksv-ds-status-success-text: #6ee7b7;
+  --ksv-ds-status-success-icon: #34d399;
+  --ksv-ds-status-warning-bg: rgba(245, 158, 11, 0.12);
+  --ksv-ds-status-warning-border: rgba(245, 158, 11, 0.25);
+  --ksv-ds-status-warning-text: #fcd34d;
+  --ksv-ds-status-warning-icon: #fbbf24;
+  --ksv-ds-status-danger-bg: rgba(244, 63, 94, 0.12);
+  --ksv-ds-status-danger-border: rgba(244, 63, 94, 0.25);
+  --ksv-ds-status-danger-text: #fda4af;
+  --ksv-ds-status-danger-icon: #fb7185;
+  --ksv-ds-status-info-bg: rgba(14, 165, 233, 0.12);
+  --ksv-ds-status-info-border: rgba(14, 165, 233, 0.25);
+  --ksv-ds-status-info-text: #7dd3fc;
+  --ksv-ds-status-info-icon: #38bdf8;
+  --ksv-ds-focus-ring: 0 0 0 3px rgba(129, 140, 248, 0.4);
+  --ksv-ds-focus-ring-danger: 0 0 0 3px rgba(251, 113, 133, 0.4);
+  --ksv-ds-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --ksv-ds-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --ksv-ds-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --ksv-ds-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --ksv-ds-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --ksv-ds-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  --ksv-ds-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  --ksv-ds-backdrop-blur: blur(12px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-ksv-ds-theme="light"]):not([data-theme="light"]) {
+    color-scheme: dark;
+
+  --ksv-ds-bg-canvas: #020617;
+  --ksv-ds-bg-surface: #0f172a;
+  --ksv-ds-bg-surface-elevated: #1e293b;
+  --ksv-ds-bg-surface-sunken: #000000;
+  --ksv-ds-bg-subtle: #0f172a;
+  --ksv-ds-bg-muted: #1e293b;
+  --ksv-ds-bg-overlay: rgba(0, 0, 0, 0.75);
+  --ksv-ds-bg-glass: rgba(15, 23, 42, 0.75);
+  --ksv-ds-bg-glass-card: rgba(30, 41, 59, 0.6);
+  --ksv-ds-text-primary: #f8fafc;
+  --ksv-ds-text-secondary: #94a3b8;
+  --ksv-ds-text-tertiary: #64748b;
+  --ksv-ds-text-muted: #475569;
+  --ksv-ds-text-inverse: #0f172a;
+  --ksv-ds-text-brand: #818cf8;
+  --ksv-ds-text-link: #818cf8;
+  --ksv-ds-text-link-hover: #a5b4fc;
+  --ksv-ds-border-subtle: rgba(255, 255, 255, 0.08);
+  --ksv-ds-border-default: rgba(255, 255, 255, 0.15);
+  --ksv-ds-border-strong: rgba(255, 255, 255, 0.25);
+  --ksv-ds-border-focus: #818cf8;
+  --ksv-ds-border-glass: rgba(255, 255, 255, 0.1);
+  --ksv-ds-interactive-primary: #6366f1;
+  --ksv-ds-interactive-primary-hover: #818cf8;
+  --ksv-ds-interactive-primary-active: #4f46e5;
+  --ksv-ds-interactive-primary-text: #ffffff;
+  --ksv-ds-interactive-secondary: #1e293b;
+  --ksv-ds-interactive-secondary-hover: #334155;
+  --ksv-ds-interactive-secondary-active: #475569;
+  --ksv-ds-interactive-secondary-text: #f8fafc;
+  --ksv-ds-interactive-accent: #06b6d4;
+  --ksv-ds-interactive-accent-hover: #22d3ee;
+  --ksv-ds-interactive-accent-active: #0891b2;
+  --ksv-ds-interactive-accent-text: #ffffff;
+  --ksv-ds-interactive-danger: #f43f5e;
+  --ksv-ds-interactive-danger-hover: #fb7185;
+  --ksv-ds-interactive-danger-active: #e11d48;
+  --ksv-ds-interactive-danger-text: #ffffff;
+  --ksv-ds-interactive-ghost-hover: rgba(255, 255, 255, 0.06);
+  --ksv-ds-interactive-ghost-active: rgba(255, 255, 255, 0.1);
+  --ksv-ds-interactive-disabled: rgba(255, 255, 255, 0.06);
+  --ksv-ds-interactive-disabled-text: rgba(255, 255, 255, 0.25);
+  --ksv-ds-interactive-disabled-border: rgba(255, 255, 255, 0.04);
+  --ksv-ds-status-success-bg: rgba(16, 185, 129, 0.12);
+  --ksv-ds-status-success-border: rgba(16, 185, 129, 0.25);
+  --ksv-ds-status-success-text: #6ee7b7;
+  --ksv-ds-status-success-icon: #34d399;
+  --ksv-ds-status-warning-bg: rgba(245, 158, 11, 0.12);
+  --ksv-ds-status-warning-border: rgba(245, 158, 11, 0.25);
+  --ksv-ds-status-warning-text: #fcd34d;
+  --ksv-ds-status-warning-icon: #fbbf24;
+  --ksv-ds-status-danger-bg: rgba(244, 63, 94, 0.12);
+  --ksv-ds-status-danger-border: rgba(244, 63, 94, 0.25);
+  --ksv-ds-status-danger-text: #fda4af;
+  --ksv-ds-status-danger-icon: #fb7185;
+  --ksv-ds-status-info-bg: rgba(14, 165, 233, 0.12);
+  --ksv-ds-status-info-border: rgba(14, 165, 233, 0.25);
+  --ksv-ds-status-info-text: #7dd3fc;
+  --ksv-ds-status-info-icon: #38bdf8;
+  --ksv-ds-focus-ring: 0 0 0 3px rgba(129, 140, 248, 0.4);
+  --ksv-ds-focus-ring-danger: 0 0 0 3px rgba(251, 113, 133, 0.4);
+  --ksv-ds-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --ksv-ds-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.4);
+  --ksv-ds-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --ksv-ds-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  --ksv-ds-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --ksv-ds-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+  --ksv-ds-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  --ksv-ds-backdrop-blur: blur(12px);
+  }
+}

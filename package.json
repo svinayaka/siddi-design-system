@@ -1,0 +1,47 @@
+{
+  "name": "siddi-design-system",
+  "version": "1.0.0",
+  "description": "Design system tokens and core stylesheets for Siddi applications.",
+  "type": "module",
+  "main": "./src/index.css",
+  "style": "./src/index.css",
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": "./src/index.css",
+    "./colors": "./src/colors.css",
+    "./spacing": "./src/spacing.css",
+    "./typography": "./src/typography.css",
+    "./breakpoints": "./src/breakpoints.css",
+    "./light": "./src/light.css",
+    "./dark": "./src/dark.css",
+    "./*": "./src/*"
+  },
+  "files": [
+    "src"
+  ],
+  "keywords": [
+    "design-system",
+    "css",
+    "tokens",
+    "theme",
+    "dark-mode",
+    "light-mode",
+    "siddi"
+  ],
+  "scripts": {
+    "build": "node build.ts",
+    "prepublishOnly": "npm run build",
+    "preview": "http-server . -o /test.html",
+    "test": "tsc --noEmit && npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.20.2",
+    "http-server": "^14.1.1",
+    "style-dictionary": "^5.5.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  }
+}

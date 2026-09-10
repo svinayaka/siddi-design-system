@@ -1,0 +1,58 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --ksv-ds-space-0: 0;
+  --ksv-ds-space-1: 0.25rem;
+  --ksv-ds-space-2: 0.5rem;
+  --ksv-ds-space-3: 0.75rem;
+  --ksv-ds-space-4: 1rem;
+  --ksv-ds-space-5: 1.25rem;
+  --ksv-ds-space-6: 1.5rem;
+  --ksv-ds-space-8: 2rem;
+  --ksv-ds-space-10: 2.5rem;
+  --ksv-ds-space-12: 3rem;
+  --ksv-ds-space-16: 4rem;
+  --ksv-ds-space-20: 5rem;
+  --ksv-ds-space-24: 6rem;
+  --ksv-ds-space-32: 8rem;
+  --ksv-ds-radius-none: 0px;
+  --ksv-ds-radius-xs: 0.125rem;
+  --ksv-ds-radius-sm: 0.25rem;
+  --ksv-ds-radius-md: 0.375rem;
+  --ksv-ds-radius-lg: 0.5rem;
+  --ksv-ds-radius-xl: 0.75rem;
+  --ksv-ds-radius-2xl: 1rem;
+  --ksv-ds-radius-3xl: 1.5rem;
+  --ksv-ds-radius-full: 9999px;
+  --ksv-ds-shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --ksv-ds-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --ksv-ds-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --ksv-ds-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --ksv-ds-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --ksv-ds-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --ksv-ds-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  --ksv-ds-ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --ksv-ds-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ksv-ds-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ksv-ds-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ksv-ds-ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ksv-ds-duration-fast: 150ms;
+  --ksv-ds-duration-normal: 200ms;
+  --ksv-ds-duration-slow: 300ms;
+  --ksv-ds-duration-slower: 500ms;
+  --ksv-ds-z-negative: -1;
+  --ksv-ds-z-elevate: 1;
+  --ksv-ds-z-dropdown: 1000;
+  --ksv-ds-z-sticky: 1100;
+  --ksv-ds-z-fixed: 1200;
+  --ksv-ds-z-modal-backdrop: 1300;
+  --ksv-ds-z-modal: 1400;
+  --ksv-ds-z-popover: 1500;
+  --ksv-ds-z-tooltip: 1600;
+  --ksv-ds-z-toast: 1700;
+  --ksv-ds-transition-fast: all var(--ksv-ds-duration-fast) var(--ksv-ds-ease-default);
+  --ksv-ds-transition-normal: all var(--ksv-ds-duration-normal) var(--ksv-ds-ease-default);
+  --ksv-ds-transition-slow: all var(--ksv-ds-duration-slow) var(--ksv-ds-ease-default);
+}

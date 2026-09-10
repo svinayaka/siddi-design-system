@@ -1,0 +1,14 @@
+{
+  "z": {
+    "negative": { "$value": "-1" },
+    "elevate": { "$value": "1" },
+    "dropdown": { "$value": "1000" },
+    "sticky": { "$value": "1100" },
+    "fixed": { "$value": "1200" },
+    "modal-backdrop": { "$value": "1300" },
+    "modal": { "$value": "1400" },
+    "popover": { "$value": "1500" },
+    "tooltip": { "$value": "1600" },
+    "toast": { "$value": "1700" }
+  }
+}
