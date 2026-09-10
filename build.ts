@@ -5,6 +5,7 @@ import type { TransformedToken } from 'style-dictionary/types';
 // Configurable Prefix (can be changed to anything, e.g., "ds", "ui", "siddi", "ksv-ds")
 const PREFIX = 'ksv-ds';
 const THEME_ATTR = `data-${PREFIX}-theme`;
+const THEME_DATASET_KEY = `${PREFIX}-theme`.replace(/-([a-z0-9])/g, (_, char) => char.toUpperCase());
 
 console.log(`🚀 Building Siddi Design System Tokens with prefix: "--${PREFIX}-"...`);
 
@@ -441,7 +442,7 @@ a:hover {
 
   <script>
     function updateLabel() {
-      const current = document.documentElement.getAttribute('${THEME_ATTR}');
+      const current = document.documentElement.dataset.${THEME_DATASET_KEY};
       const label = document.getElementById('active-theme-label');
       if (current) {
         label.textContent = '<html ${THEME_ATTR}="' + current + '">';
@@ -452,9 +453,9 @@ a:hover {
 
     function setTheme(theme) {
       if (theme === 'auto') {
-        document.documentElement.removeAttribute('${THEME_ATTR}');
+        delete document.documentElement.dataset.${THEME_DATASET_KEY};
       } else {
-        document.documentElement.setAttribute('${THEME_ATTR}', theme);
+        document.documentElement.dataset.${THEME_DATASET_KEY} = theme;
       }
       updateLabel();
     }

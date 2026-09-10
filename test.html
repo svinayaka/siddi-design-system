@@ -141,7 +141,7 @@
 
   <script>
     function updateLabel() {
-      const current = document.documentElement.getAttribute('data-ksv-ds-theme');
+      const current = document.documentElement.dataset.ksvDsTheme;
       const label = document.getElementById('active-theme-label');
       if (current) {
         label.textContent = '<html data-ksv-ds-theme="' + current + '">';
@@ -152,9 +152,9 @@
 
     function setTheme(theme) {
       if (theme === 'auto') {
-        document.documentElement.removeAttribute('data-ksv-ds-theme');
+        delete document.documentElement.dataset.ksvDsTheme;
       } else {
-        document.documentElement.setAttribute('data-ksv-ds-theme', theme);
+        document.documentElement.dataset.ksvDsTheme = theme;
       }
       updateLabel();
     }
